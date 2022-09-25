@@ -18,7 +18,7 @@ app.post('/sendPayLoad', (req,res)=>{
         jsonObjec.detailList.forEach(element => {
             names += element.name + ","
         });
-        names = names.substring(0,names.length -2) // remove the last ","
+        names = names.substring(0,names.length -1) // remove the last ","
         console.log(jsonObjec.detailList[0].name)
         response = {
             'uploadResponseCode' :'SUCCESS',
