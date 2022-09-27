@@ -10,6 +10,7 @@ app.post('/sendPayLoad', (req,res)=>{
     let response = ''
     try {
         const payLoad = req.body.jsonpayload
+        console.log(payLoad)
         const jsonObjec = JSON.parse(payLoad)
         
         console.log(jsonObjec.userId)
